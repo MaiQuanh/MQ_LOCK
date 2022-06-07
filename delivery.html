@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.0.0-web/css/all.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'></script>
+    <title>LOCK</title>
+</head>
+
+<body>
+    <section class="top">
+        <div class="container">
+            <div class="row">
+                <div class="top-logo">
+                    <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                </div>
+                <div class="top-menu-items">
+                    <ul>
+                        <li><a href="cartegory.html">ĐỒNG HỒ NAM</a>
+                            <ul class="top-menu-item">
+                                <li><a href="">Doxa</a></li>
+                                <li><a href="">Seiko</a></li>
+                                <li><a href="">Casio</a></li>
+                                <li><a href="">Citizen</a></li>
+                                <li><a href="">Tissot</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cartegory.html">ĐỒNG HỒ NỮ</a>
+                            <ul class="top-menu-item">
+                                <li><a href="">Doxa</a></li>
+                                <li><a href="">Casio</a></li>
+                                <li><a href="">Sokolov</a></li>
+                                <li><a href="">Citizen</a></li>
+                                <li><a href="">Saga</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="cartegory.html">ĐỒNG HỒ ĐÔI</a></li>
+
+                        <li><a href="cartegory.html">PHỤ KIỆN</a>
+                            <ul class="top-menu-item">
+                                <li><a href="">Dây da đồng hồ</a></li>
+                                <li><a href="">Dây kim loại</a></li>
+                                <li><a href="">Hộp Xoay</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+
+                <div class="top-menu-icons">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="Tìm kiếm">
+                            <i class="fas fa-search"></i>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                        </li>
+
+                        <li>
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DELIVERY -->
+    <section class="deivery">
+        <div class="container">
+            <div class="delivery-top-wrap">
+                <div class="delivery-top">
+                    <div class="delivery-top-delivery delivery-top-item">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+    
+                    <div class="delivery-top-adress delivery-top-item">
+                        <a href="delivery.html"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+    
+                    <div class="delivery-top-payment delivery-top-item">
+                        <a href="payment.html"><i class="fas fa-money-check-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="delivery-content row">
+                <div class="delivery-content-left">
+                    <p>Vui lòng chọn địa chỉ giao hàng</p>
+
+                    <div class="delivery-content-left-dangnhap row">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <p>Đăng nhập ( Nếu bạn đã có tài khoản của CLOCK )</p>
+                    </div>
+
+
+                    <div class="delivery-content-left-khachle row">
+                        <input checked name="loaikhach" type="radio">
+                        <p><span style="font-weight: bold;">Khách lẻ</span> ( Nếu bạn không muốn lưu lại thông tin )</p>
+                    </div>
+
+                    <div class="delivery-content-left-dangky row">
+                        <input name="loaikhach" type="radio">
+                        <p><span style="font-weight: bold;">Đăng ký</span> ( Tạo mới tài khoản với thông tin bên dưới )</p>
+                    </div>
+
+                    <div class="delivery-content-left-left-input-top row">
+                        <div class="delivery-content-left-left-input-top-item">
+                            <label for="">Họ tên <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+
+                        <div class="delivery-content-left-left-input-top-item">
+                            <label for="">Điện thoại <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+
+                        <div class="delivery-content-left-left-input-top-item">
+                            <select class="delivery-content-select" name="calc_shipping_provinces" required="">
+                                <option value="">Tỉnh / Thành phố</option>
+                            </select>
+                            <input class="billing_address_1" name="" type="hidden" value="">
+                        </div>
+
+                        <div class="delivery-content-left-left-input-top-item">
+                            <select class="delivery-content-select" name="calc_shipping_district" required="">
+                                <option value="">Quận / Huyện</option>
+                              </select>
+                              <input class="billing_address_2" name="" type="hidden" value="">
+                        </div>
+                    </div>
+                    
+                    <div class="delivery-content-left-left-input-bottom">
+                        <label for="">Địa chỉ <span style="color: red;">*</span></label>
+                        <input type="text">
+                    </div>
+
+                    <div class="delivery-content-left-button row">
+                        <a href="cart.html"><span>&#171;</span><p>Quay lại giỏ hàng</p></a>
+                        <a href="payment.html"><button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button></a>
+                    </div>
+                </div>
+
+                <div class="delivery-content-right">
+                    <table>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+    
+                        <tr>
+                            <td>ĐỒNG HỒ CASIO NAM PIN DÂY DA</td>
+                            <td>-30%</td>
+                            <td>1</td>
+                            <td><p>1.500.000<sup>đ</sup></p></td>
+                        </tr>
+    
+                        <tr>
+                            <td>ĐỒNG HỒ OLYM PIANUS TRẮNG NAM DÂY INOX</td>
+                            <td>-20%</td>
+                            <td>1</td>
+                            <td><p>6.912.000 <sub>đ</sub></p></td>
+                        </tr>
+    
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng</td>
+                            <td style="font-weight: bold;" colspan="3"><p>6.912.000 <sub>đ</sub></p></td>
+                        </tr>
+    
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                            <td style="font-weight: bold;" colspan="3"><p>691.200 <sub>đ</sub></p></td>
+                        </tr>
+    
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                            <td style="font-weight: bold;" colspan="3"><p>7.603.200 <sub>đ</sub></p></td>
+                        </tr>
+    
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+   <!-- FOOTER -->
+    <section class="footer">
+        <div class="footer-container">
+            <p>Tải ứng dụng CLOCK</p>
+            <div class="app-google">
+                <a href=""><img src="./img/AppStore.png" alt=""></a>
+                <a href=""><img src="./img/CHplay.png" alt=""></a>
+            </div>
+            <p>Nhận bản tin CLOCK</p>
+            <div class="input-email">
+                <input type="text" placeholder="Nhập email của bạn...">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="footer-items">
+                <li><a href=""><img src="./img/Dathongbao.png" alt=""></a></li>
+                <li><a href=""></a>Liên hệ</li>
+                <li><a href=""></a>Tuyển dụng</li>
+                <li><a href=""></a>Giới thiệu</li>
+                <li>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </li>
+            </div>
+
+            <div class="footer-text">
+                Cửa hàng đồng hồ CLOCK với số đăng ký kinh doanh: 0105777650 <br>
+                Địa chỉ đăng ký: Huỳnh Tấn Phát, Quận 7, TP.Hồ Chí Minh, Việt Nam - 0234 206 5555 <br>
+                Đặt hàng online : 0246 665 3545
+            </div>
+
+            <div class="footer-bottom">
+                ©CLOCK All rights reserved
+            </div>
+        </div>
+    </section>
+    <!-- SCRIPT -->
+    <script src="./js/script.js"></script>
+    <script src="./js/slide.js"></script>
+</body>
+</html>
